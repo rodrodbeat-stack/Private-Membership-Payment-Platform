@@ -13,3 +13,16 @@
 @media(max-width:1250px){.factory-layout{grid-template-columns:175px minmax(400px,1fr)}.factory-rightbar{grid-column:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.factory-motto{display:none}.factory-sidebar{grid-row:1 / span 2}.module-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:760px){.factory-topbar{height:68px;padding:7px 12px;gap:10px}.factory-brand{min-width:0;flex:1}.factory-brand strong{font-size:16px}.factory-brand small{font-size:7px}.factory-emblem{width:40px;height:40px}.factory-status{display:none}.factory-account{display:none}.factory-topbar .menu-toggle{display:block}.factory-layout{display:block;padding:8px}.factory-sidebar{display:none;margin-bottom:9px}.factory-topbar.menu-open+.factory-layout .factory-sidebar{display:flex}.factory-sidebar .sidebar-bottom{display:none}.factory-main{gap:9px}.factory-hero{min-height:330px;padding:25px 18px 45px}.factory-hero h1{font-size:clamp(35px,10vw,55px)}.hero-reactor{right:-70px;opacity:.42;transform:translateY(-50%) scale(.8)}.hero-copy-factory{max-width:75%;}.factory-hero p{font-size:10px}.factory-hero p em{font-size:14px}.hero-bottomline{font-size:6px;padding:7px}.factory-section{padding:12px}.module-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.module-visual{height:75px}.module-visual span{font-size:38px}.factory-lower-grid{grid-template-columns:1fr}.terminal-panel,.resource-panel{grid-column:auto}.factory-rightbar{display:grid;grid-template-columns:1fr 1fr;margin-top:9px}.factory-footer{flex-direction:column;line-height:1.7}.factory-topbar.menu-open+.factory-layout .factory-sidebar{display:flex}.factory-topbar.menu-open+.factory-layout .factory-main{margin-top:8px}}
 @media(max-width:430px){.factory-rightbar{grid-template-columns:1fr}.factory-hero-actions{gap:7px}.neon-button,.outline-button{padding:10px;font-size:8px}.module-grid{gap:7px}.module-info{padding:7px}.module-info h3{font-size:10px}.transmission-row{gap:6px}.transmission-row label{display:none}.factory-section-title h2{font-size:14px}}
+
+/* DIGITAL FACTORY // CENTRAL CORE HUD */
+.hero-reactor{filter:drop-shadow(0 0 18px #00dfff22)}
+.reactor-orbit{animation:dfOrbit 18s linear infinite}
+.orbit-b{animation-direction:reverse;animation-duration:24s}
+.reactor-core{animation:dfPulse 3.2s ease-in-out infinite}
+.reactor-hud{position:absolute;right:-3px;bottom:31px;z-index:3;display:grid;gap:5px;min-width:142px;padding:8px 10px;border:1px solid #00dfff66;background:#050713d9;box-shadow:0 0 16px #00dfff22;font:700 7px var(--font-head);letter-spacing:.6px;color:#8faec2}
+.reactor-hud span{display:flex;justify-content:space-between;gap:10px}
+.reactor-hud b{color:#75ffac}
+.reactor-hud i{display:inline-block;width:5px;height:5px;border-radius:50%;background:#65ff9d;box-shadow:0 0 7px #65ff9d;margin-right:4px}
+@keyframes dfOrbit{to{transform:rotate(395deg) scaleY(.65)}}
+@keyframes dfPulse{0%,100%{box-shadow:0 0 25px #00dfff44,inset 0 0 15px #f000d722}50%{box-shadow:0 0 48px #00dfff99,inset 0 0 28px #f000d755}}
+@media(max-width:760px){.reactor-hud{right:5px;bottom:5px;min-width:120px;opacity:.9}.hero-reactor{opacity:.55}}
