@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="js/app.js" defer></script>
 </head>
 <body class="factory-page">
@@ -43,7 +44,7 @@
     <main class="factory-main social-main" id="home">
       <section class="social-heading">
         <div><div class="factory-eyebrow"><span class="status-dot"></span> DIGITAL FACTORY / ENGINEERING COMMUNITY</div><h1>FACTORY <span>REELS</span></h1><p>Conocimiento técnico, experiencias y aprendizaje compartido.</p></div>
-        <a class="neon-button" href="login.html">＋ PUBLICAR</a>
+        <button class="neon-button" type="button" data-open-publish>＋ PUBLICAR</button>
       </section>
       <nav class="feed-tabs" aria-label="Feed categories"><a class="selected" href="#reels">PARA TI</a><a href="#reels">SIGUIENDO</a><a href="#reels">CLOUD</a><a href="#reels">DEVOPS</a><a href="#reels">CYBER</a><a href="#reels">KUBERNETES</a></nav>
       <section class="reels-feed" id="reels" aria-label="Reels de Digital Factory">
@@ -85,6 +86,20 @@
     </aside>
   </div>
 
+  <section class="publish-modal" data-publish-modal hidden aria-modal="true" role="dialog" aria-labelledby="publish-title">
+    <form class="publish-card" data-publish-form>
+      <button class="publish-close" type="button" data-close-publish aria-label="Cerrar">×</button>
+      <div class="factory-eyebrow">DIGITAL FACTORY / CREATOR STUDIO</div>
+      <h2 id="publish-title">PUBLICAR <span>REEL</span></h2>
+      <p>Comparte una fotografía o video con la comunidad.</p>
+      <label class="publish-field">TÍTULO<input name="title" maxlength="100" placeholder="Ej. Mi laboratorio Kubernetes" required></label>
+      <label class="publish-field">DESCRIPCIÓN<textarea name="caption" maxlength="1200" rows="3" placeholder="¿Qué quieres compartir?"></textarea></label>
+      <label class="publish-field">ARCHIVO (FOTO O VIDEO)<input name="media" type="file" accept="image/*,video/mp4,video/webm,video/quicktime" required></label>
+      <small class="publish-hint">Máximo 100 MB. Formatos de imagen y video compatibles con el navegador.</small>
+      <button class="neon-button publish-submit" type="submit">SUBIR Y PUBLICAR ↗</button>
+      <div class="publish-message" data-publish-message aria-live="polite"></div>
+    </form>
+  </section>
   <footer class="factory-footer"><span>© <span id="year"></span> DIGITAL FACTORY // DIGITAL KNOWLEDGE FACTORY</span><span>BUILT FOR THE NEXT GENERATION OF ENGINEERS</span><span><a href="plans.html">MEMBERSHIPS</a>　|　<a href="login.html">PRIVATE ACCESS</a>　|　<a href="register.html">JOIN</a></span></footer>
 </body>
 </html>
