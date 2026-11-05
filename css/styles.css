@@ -26,3 +26,62 @@
 @keyframes dfOrbit{to{transform:rotate(395deg) scaleY(.65)}}
 @keyframes dfPulse{0%,100%{box-shadow:0 0 25px #00dfff44,inset 0 0 15px #f000d722}50%{box-shadow:0 0 48px #00dfff99,inset 0 0 28px #f000d755}}
 @media(max-width:760px){.reactor-hud{right:5px;bottom:5px;min-width:120px;opacity:.9}.hero-reactor{opacity:.55}}
+
+/* DIGITAL FACTORY // SOCIAL REELS EXPERIENCE */
+.factory-layout{grid-template-columns:190px minmax(420px,1fr) 260px;gap:14px}
+.social-main{gap:12px;min-height:calc(100vh - 150px)}
+.social-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:16px 20px;border:1px solid #00dfff66;background:linear-gradient(110deg,#0c0b1b,#10091b 58%,#07131d);box-shadow:0 0 20px #00dfff12}
+.social-heading .factory-eyebrow{margin-bottom:7px}
+.social-heading h1{font:800 clamp(22px,3vw,36px)/1 var(--font-head);letter-spacing:-1px;margin:0;text-shadow:0 0 15px #00dfff55}
+.social-heading h1 span{color:#ff3cdb}
+.social-heading p{margin:7px 0 0;color:#91aabe;font-size:13px}
+.social-heading .neon-button{white-space:nowrap}
+.feed-tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 0 8px;scrollbar-width:none}
+.feed-tabs::-webkit-scrollbar{display:none}
+.feed-tabs a{flex:0 0 auto;padding:9px 13px;border:1px solid #34465e;background:#090c18;color:#9bb3c8;font:700 8px var(--font-head);letter-spacing:.8px}
+.feed-tabs a.selected,.feed-tabs a:hover{border-color:#ff2bd7;color:#fff;background:#a900ff24;box-shadow:0 0 12px #d000ff22}
+.reels-feed{height:min(76vh,790px);min-height:590px;overflow-y:auto;overscroll-behavior:contain;scroll-snap-type:y mandatory;scrollbar-width:thin;scrollbar-color:#d000ba #090b15;display:flex;flex-direction:column;align-items:center;gap:16px;padding:2px 10px 16px}
+.reel-card{position:relative;isolation:isolate;flex:0 0 100%;width:min(100%,490px);min-height:580px;max-height:760px;overflow:hidden;scroll-snap-align:start;border:1px solid #00dfff88;background:#090c19;box-shadow:0 0 25px #00dfff17}
+.reel-image{position:absolute;inset:0;z-index:-2;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 50% 34%,#17496a,#101127 42%,#050711 78%)}
+.reel-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#05071322 0%,#05071305 35%,#050713e8 100%)}
+.reel-image-grid{position:absolute;inset:0;opacity:.38;background-image:linear-gradient(#00dfff24 1px,transparent 1px),linear-gradient(90deg,#00dfff24 1px,transparent 1px);background-size:27px 27px;transform:perspective(400px) rotateX(18deg) scale(1.2);transform-origin:bottom}
+.reel-visual-icon{font-size:clamp(120px,20vw,210px);font-family:var(--font-head);font-weight:800;color:#b8f7ff18;text-shadow:0 0 35px #00dfff55;filter:drop-shadow(0 0 20px #00dfff44)}
+.reel-top-tag{position:absolute;top:18px;left:18px;right:18px;display:flex;justify-content:space-between;gap:10px;color:#d8f6ff;font:700 8px var(--font-head);letter-spacing:1px}
+.reel-top-tag span{color:#70ffae}
+.reel-play{position:absolute;top:44%;left:50%;transform:translate(-50%,-50%);width:58px;height:58px;display:grid;place-items:center;border:1px solid #6cefff99;border-radius:50%;background:#07101b88;color:#fff;padding-left:4px;box-shadow:0 0 30px #00dfff44}
+.reel-caption{position:absolute;left:20px;right:82px;bottom:20px;z-index:2}
+.reel-category{font:700 8px var(--font-head);letter-spacing:1.2px;color:#ff5bdf}
+.reel-caption h2{font:800 clamp(20px,3vw,28px)/1.15 var(--font-head);margin:9px 0;text-shadow:0 2px 12px #000}
+.reel-caption p{font-size:14px;line-height:1.45;color:#c0d2e1;margin:0 0 14px;text-shadow:0 2px 8px #000}
+.reel-author{display:flex;align-items:center;gap:9px}
+.avatar{width:32px;height:32px;flex:0 0 32px;border:1px solid #00dfff;border-radius:50%;display:grid;place-items:center;background:#11172b;color:#9af5ff;font:800 9px var(--font-head);box-shadow:0 0 12px #00dfff44}
+.reel-author>span:nth-child(2){display:grid;gap:3px;min-width:0}
+.reel-author b{font:700 8px var(--font-head);color:#fff;letter-spacing:.5px}
+.reel-author small{font-size:10px;color:#9eb5c8}
+.reel-author>a{margin-left:auto;color:#70f2ff;font:700 8px var(--font-head);white-space:nowrap}
+.reel-tags{font:700 8px var(--font-head);letter-spacing:.5px;color:#82ddec;margin-top:13px}
+.reel-actions{position:absolute;right:13px;bottom:24px;z-index:3;display:flex;flex-direction:column;align-items:center;gap:15px}
+.reel-actions button,.reel-actions>a{display:grid;justify-items:center;gap:3px;background:none;border:0;padding:0;color:#e8f8ff;cursor:pointer}
+.reel-actions b{width:37px;height:37px;border:1px solid #7beaff88;border-radius:50%;display:grid;place-items:center;background:#07101dbb;font-size:19px;box-shadow:0 0 13px #00dfff22}
+.reel-actions span{font:700 7px var(--font-head);letter-spacing:.4px;color:#b7c9d8}
+.reel-actions button.liked b{color:#ff4bdc;border-color:#ff4bdc;box-shadow:0 0 18px #ff00c966}
+.reel-devops .reel-image{background:radial-gradient(ellipse at 50% 35%,#4d1459,#16112b 45%,#050711 80%)}
+.reel-kube .reel-image{background:radial-gradient(ellipse at 50% 35%,#155b6c,#101a31 45%,#050711 80%)}
+.reel-cyber .reel-image{background:radial-gradient(ellipse at 50% 35%,#512047,#161127 45%,#050711 80%)}
+.pipeline-visual{position:absolute;top:47%;left:7%;right:7%;display:flex;justify-content:center;align-items:center;gap:7px;flex-wrap:wrap;color:#8ef4ff;font:700 8px var(--font-head)}
+.pipeline-visual i,.kube-nodes span{padding:10px 8px;border:1px solid #00dfff99;background:#061322dd;font-style:normal;box-shadow:0 0 14px #00dfff22}
+.pipeline-visual b{color:#ff5bdf}
+.kube-nodes{position:absolute;top:43%;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;text-align:center;color:#8ff4ff;font:700 8px var(--font-head)}
+.kube-nodes i{grid-column:1/4;padding:12px;border:1px solid #ff42d9;background:#170d26}
+.kube-nodes b{grid-column:1/4;color:#00dfff}
+.security-radar{position:absolute;top:25%;width:180px;height:180px;border:1px solid #ff55dc;border-radius:50%;display:grid;place-items:center;background:repeating-radial-gradient(circle,transparent 0 25px,#00dfff44 26px 27px);box-shadow:0 0 30px #ff00c933}
+.security-radar:before,.security-radar:after{content:"";position:absolute;background:#00dfff66}
+.security-radar:before{width:1px;height:100%}.security-radar:after{height:1px;width:100%}
+.security-radar i{position:absolute;width:50%;height:50%;top:0;left:50%;transform-origin:bottom left;background:linear-gradient(45deg,#00dfff55,transparent);border-radius:100% 0 0}
+.security-radar b{z-index:1;text-align:center;color:#fff;font:800 17px var(--font-head);text-shadow:0 0 12px #00dfff}
+.feed-end{display:flex;justify-content:center;align-items:center;gap:12px;color:#7996ad;font:700 8px var(--font-head);letter-spacing:1px;padding:8px}
+.feed-end span{color:#ff4cdb}
+.factory-rightbar{align-self:start;position:sticky;top:12px;max-height:calc(100vh - 100px);overflow:auto;scrollbar-width:thin}
+@media(max-width:1250px){.factory-layout{grid-template-columns:170px minmax(390px,1fr)}.factory-rightbar{position:static;max-height:none}}
+@media(max-width:760px){.factory-layout{display:block;padding:8px}.social-main{margin-top:8px}.social-heading{padding:13px;align-items:flex-start}.social-heading h1{font-size:23px}.social-heading p{font-size:11px}.social-heading .neon-button{padding:10px;font-size:8px}.feed-tabs{margin:0 -2px}.reels-feed{height:calc(100dvh - 205px);min-height:520px;max-height:760px;padding:0 0 12px;gap:12px}.reel-card{width:min(100%,460px);min-height:520px}.reel-caption{left:14px;right:68px;bottom:16px}.reel-caption h2{font-size:20px}.reel-caption p{font-size:12px}.reel-actions{right:9px;bottom:18px;gap:12px}.reel-actions b{width:34px;height:34px}.reel-top-tag{left:13px;right:13px;font-size:7px}.factory-rightbar{display:grid;grid-template-columns:1fr 1fr;margin-top:12px}.factory-footer{margin-top:10px}}
+@media(max-width:430px){.social-heading{gap:8px}.social-heading h1{font-size:19px}.social-heading p{max-width:190px}.social-heading .neon-button{font-size:7px;padding:9px 8px}.reels-feed{height:calc(100dvh - 190px);min-height:500px}.reel-card{min-height:500px}.reel-caption p{font-size:11px}.reel-tags{font-size:7px}.reel-author small{font-size:9px}.factory-rightbar{grid-template-columns:1fr}}
