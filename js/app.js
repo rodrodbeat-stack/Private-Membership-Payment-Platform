@@ -6,7 +6,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
-  const header = document.querySelector(".topbar");
+  const clock = document.getElementById("system-clock");
+  const updateClock = () => { if (clock) clock.textContent = new Date().toLocaleTimeString("es-CL", { hour12: false }); };
+  updateClock();
+  if (clock) setInterval(updateClock, 1000);
+
+  const header = document.querySelector(".factory-topbar, .topbar");
   const toggle = document.querySelector(".menu-toggle");
   if (header && toggle) {
     toggle.addEventListener("click", () => {
