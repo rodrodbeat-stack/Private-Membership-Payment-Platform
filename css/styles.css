@@ -317,3 +317,128 @@ body.factory-page:before{
   .social-heading{background:linear-gradient(110deg,#17201d,#090e0f)}
   .reel-image:before{inset:10% 8%;opacity:.2}
 }
+
+
+/* DF // PREDATOR X TERMINATOR — HIGH-CONTRAST BIOMECH REBUILD */
+:root{
+ --df-oxide:#a8c879;--df-bone:#d6c5a4;--df-steel:#59645f;--df-blood:#9e4436;
+}
+body.factory-page{
+ background:#020404!important;
+ background-image:
+  radial-gradient(ellipse at 50% 12%,#53634a38,transparent 34%),
+  radial-gradient(ellipse at 5% 80%,#733b2520,transparent 30%),
+  repeating-linear-gradient(0deg,transparent 0 5px,#c5d0b008 6px),
+  linear-gradient(135deg,#080d0c,#010303 62%,#101310)!important;
+}
+body.factory-page:before{
+ opacity:.55!important;
+ background:
+  repeating-radial-gradient(ellipse at 50% 125%,transparent 0 12px,#9dbb7630 13px 15px,transparent 16px 28px),
+  linear-gradient(90deg,transparent 0 5%,#a7c77a18 5.1%,transparent 5.3% 94.7%,#a7c77a18 94.9%,transparent 95%)!important;
+}
+.scanlines{display:block!important;opacity:.18;pointer-events:none}
+.factory-topbar{
+ background:linear-gradient(90deg,#020505 0%,#18201c 48%,#050807 100%)!important;
+ border-bottom:2px solid #8ca96b!important;
+ box-shadow:0 7px 35px #000,0 1px 18px #9cbd6a25!important;
+}
+.factory-emblem{
+ background:linear-gradient(145deg,#a4bb78 0%,#263329 35%,#050807 75%)!important;
+ border:2px solid #d1dcb3!important;color:#f2f0d8!important;
+ box-shadow:inset 0 0 18px #d7e8ae66,0 0 24px #a8c87966!important;
+}
+.factory-brand strong{color:#f0f1e8!important;text-shadow:0 0 14px #b2d27b88!important;letter-spacing:2.8px!important}
+.factory-brand small,.factory-status{color:#c3d69e!important}
+.factory-sidebar,.right-panel{
+ background:linear-gradient(145deg,#1b2420 0%,#080d0c 48%,#030505 100%)!important;
+ border:1px solid #83986c!important;border-radius:3px!important;
+ box-shadow:inset 0 0 35px #000,0 0 22px #91b36b20!important;
+}
+.sidebar-heading,.right-panel-title{color:#c5d99b!important;border-color:#91a978!important}
+.side-link{color:#d0d5c9!important}
+.side-link b{color:#c0d995!important}
+.side-link.active,.side-link:hover{background:linear-gradient(90deg,#a8c87935,transparent)!important;border-left:3px solid #c7e18c!important;color:#fff!important}
+.social-heading{
+ position:relative;overflow:hidden;
+ background:linear-gradient(110deg,#27342c 0%,#0a100e 48%,#241a14 100%)!important;
+ border:1px solid #a5bb7a!important;border-left:5px solid #b4d47c!important;
+ border-radius:3px!important;box-shadow:inset 0 0 55px #000d,0 0 28px #9bbd6b20!important;
+}
+.social-heading:after{
+ content:"";position:absolute;right:2%;top:-55%;width:220px;height:220px;border:1px solid #b5d18b55;border-radius:50%;
+ box-shadow:0 0 0 13px #b5d18b0c,0 0 0 28px #b5d18b0a,0 0 45px #a5c87922;pointer-events:none;
+}
+.social-heading h1{color:#f0f1e8!important;text-shadow:0 0 18px #a8c87955!important}
+.social-heading h1 span{color:#c1df85!important;text-shadow:0 0 18px #a8c87988!important}
+.social-heading .factory-eyebrow{color:#c6db9a!important}
+.social-heading p{color:#c1c9b8!important}
+.neon-button{
+ background:linear-gradient(180deg,#d9e7b7,#849b5b)!important;color:#11170e!important;
+ border:1px solid #e5efc8!important;border-radius:2px!important;
+ box-shadow:0 0 24px #a8c87944,inset 0 1px #fff!important;
+}
+.feed-tabs a{border-color:#66775a!important;background:#080e0c!important;color:#c3cbb9!important}
+.feed-tabs a.selected,.feed-tabs a:hover{background:#9ebd6a30!important;color:#eff6df!important;box-shadow:inset 0 -3px #c5df88!important}
+.reel-card{
+ border:1px solid #a3b77d!important;border-radius:3px!important;
+ background:#050807!important;box-shadow:0 20px 55px #000,0 0 25px #a8c87925!important;
+}
+.reel-image{
+ background-color:#080d0b!important;
+ background-image:
+  radial-gradient(ellipse at 50% 37%,#82966a 0%,#354438 18%,#111a16 43%,#030605 78%)!important;
+ box-shadow:inset 0 0 110px #000!important;
+}
+.reel-image:before{
+ content:""!important;position:absolute!important;inset:5% 14% 18%!important;z-index:1!important;pointer-events:none!important;opacity:.8!important;
+ border-left:3px solid #b5c991!important;border-right:3px solid #b5c991!important;
+ border-radius:48% 48% 28% 28% / 24% 24% 12% 12%!important;
+ clip-path:polygon(34% 0,66% 0,79% 12%,92% 35%,76% 51%,88% 100%,12% 100%,24% 51%,8% 35%,21% 12%)!important;
+ background:
+  repeating-linear-gradient(0deg,transparent 0 13px,#c5dca34d 14px 16px,transparent 17px 25px),
+  linear-gradient(90deg,transparent 5%,#a8c87933 30%,#d4dfb055 50%,#a8c87933 70%,transparent 95%)!important;
+ filter:drop-shadow(0 0 14px #a8c87966)!important;
+}
+.reel-image:after{background:linear-gradient(180deg,#02050405 0%,#02050408 28%,#020504d9 78%,#020504f5 100%)!important}
+.reel-image-grid{opacity:.82!important;mix-blend-mode:screen}
+.reel-image-grid:before{
+ width:178px!important;height:178px!important;border:2px solid #d0e5a6aa!important;
+ background:
+  linear-gradient(90deg,transparent 49.5%,#d0e5a6aa 50%,transparent 50.5%),
+  linear-gradient(transparent 49.5%,#d0e5a6aa 50%,transparent 50.5%),
+  radial-gradient(circle,transparent 0 37px,#d0e5a6aa 38px 40px,transparent 41px 61px,#a8c87977 62px 64px,transparent 65px)!important;
+ box-shadow:0 0 32px #a8c87966,inset 0 0 24px #a8c87933!important;
+}
+.reel-image-grid:after{height:3px!important;background:linear-gradient(90deg,transparent,#e1edbd,#a8c879,transparent)!important;box-shadow:0 0 18px #c6e68b!important;animation:predatorScan 2.5s ease-in-out infinite!important}
+.reel-top-tag{border:1px solid #b7d28b!important;background:#030706ed!important;color:#e5e9d9!important}
+.reel-top-tag span{color:#bce47b!important}
+.reel-caption:before{
+ content:"⦿ PREDATOR TARGET LOCK // BIO-SIGNATURE"!important;
+ border-left:3px solid #d2e79b!important;background:#030706ed!important;color:#d9e8b5!important;
+ box-shadow:0 0 18px #a8c87933!important;letter-spacing:1.4px!important;
+}
+.reel-category{color:#d1e5a1!important}
+.reel-caption h2{color:#fff!important;text-shadow:0 2px 18px #000,0 0 18px #a8c87944!important}
+.reel-caption p{color:#d2d8cc!important}
+.reel-actions{border:1px solid #a8c879!important;background:#030706ed!important;box-shadow:0 0 22px #000!important}
+.reel-actions b{border:1px solid #b7d28b!important;background:#18221b!important;color:#e0edc5!important}
+.reel-author>a,.reel-tags{color:#c5df91!important}
+.signal-art{
+ height:130px!important;border:1px solid #b1ca83!important;border-radius:2px!important;
+ background:radial-gradient(ellipse,#899b69 0%,#26352b 32%,#070b09 72%)!important;
+ box-shadow:inset 0 0 35px #000,0 0 20px #a8c87922!important;
+}
+.signal-art div{width:74px;height:74px;border:2px solid #d4e5a9!important;border-radius:50%!important;color:#eff5d9!important;box-shadow:0 0 0 10px #a8c8791a,0 0 30px #a8c87977!important}
+.path-row{border-color:#687c58!important;background:linear-gradient(90deg,#9fbe6c16,transparent)!important}
+.path-row>b,.path-row>i{color:#c4df8f!important}
+.stats-panel>div b{color:#bfe58a!important}
+.factory-footer{background:#030605!important;border-color:#87996b!important;color:#a1ab98!important}
+.factory-footer a{color:#c7df97!important}
+@media(max-width:760px){
+ .social-heading:after{right:-70px;opacity:.55}
+ .reel-image:before{inset:7% 10% 20%!important;opacity:.56!important}
+ .reel-image-grid:before{width:132px!important;height:132px!important}
+ .reel-card{border:1px solid #a8c879!important}
+}
+@media(prefers-reduced-motion:reduce){.reel-image-grid:after{animation:none!important}}
