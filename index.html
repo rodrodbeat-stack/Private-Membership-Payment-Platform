@@ -25,11 +25,11 @@
   <div class="factory-layout">
     <aside class="factory-sidebar">
       <div class="sidebar-heading">COMMAND MENU</div>
-      <a class="side-link active" href="#home"><b>⌂</b> INICIO</a>
-      <a class="side-link" href="#explore"><b>⌕</b> EXPLORAR</a>
-      <a class="side-link" href="#academy"><b>▣</b> ACADEMY</a>
-      <a class="side-link" href="#labs"><b>⌘</b> LABORATORIOS</a>
-      <a class="side-link" href="#resources"><b>⇩</b> RECURSOS</a>
+      <a class="side-link active" href="#home"><b>⌂</b> FEED</a>
+      <a class="side-link" href="#reels"><b>⌕</b> EXPLORAR REELS</a>
+      <a class="side-link" href="login.html"><b>▣</b> ACADEMY</a>
+      <a class="side-link" href="login.html"><b>⌘</b> LABORATORIOS</a>
+      <a class="side-link" href="login.html"><b>⇩</b> BIBLIOTECA</a>
       <div class="sidebar-heading genre-heading">SYSTEM MODULES</div>
       <a class="side-link module-link" href="#cloud"><b>◈</b> CLOUD</a>
       <a class="side-link module-link" href="#devops"><b>⌁</b> DEVOPS / CI-CD</a>
@@ -40,60 +40,35 @@
       <div class="sidebar-bottom"><div class="vault-symbol">DF</div><strong>DIGITAL FACTORY</strong><small>PRIVATE KNOWLEDGE SYSTEM</small><span><i></i> SECURE NODE ACTIVE</span></div>
     </aside>
 
-    <main class="factory-main" id="home">
-      <section class="factory-hero">
-        <div class="hero-art-grid"></div>
-        <div class="hero-copy-factory">
-          <div class="factory-eyebrow"><span class="status-dot"></span> BIENVENIDO AL SISTEMA // MEMBER ACCESS</div>
-          <h1>DIGITAL<br><span>KNOWLEDGE</span><br>FACTORY</h1>
-          <p>CONSTRUYE. AUTOMATIZA. PROTEGE.<br><em>El conocimiento es tu mejor infraestructura.</em></p>
-          <div class="factory-hero-actions"><a class="neon-button" href="register.html">▶ ACTIVAR ACCESO</a><a class="outline-button" href="#explore">EXPLORAR SISTEMA ↓</a></div>
-        </div>
-        <div class="hero-reactor" aria-label="Blackvault digital core"><div class="reactor-orbit orbit-a"></div><div class="reactor-orbit orbit-b"></div><div class="reactor-core"><span>DF</span><small>CORE<br>ENGINE</small></div><div class="reactor-label label-a">ZERO TRUST // READY</div><div class="reactor-label label-b">KNOWLEDGE NODE 001</div><div class="reactor-hud"><span><i></i> CORE STATUS <b>ONLINE</b></span><span>ENCRYPTION <b>AES-256</b></span><span>NETWORK <b>ZERO TRUST</b></span></div></div>
-        <div class="hero-bottomline"><span>DIGITAL FACTORY // PRIVATE NETWORK</span><span>ACCESS LEVEL: <b>MEMBER</b></span><span>LATENCY: 08ms</span></div>
+    <main class="factory-main social-main" id="home">
+      <section class="social-heading">
+        <div><div class="factory-eyebrow"><span class="status-dot"></span> DIGITAL FACTORY // KNOWLEDGE STREAM</div><h1>FACTORY <span>REELS</span></h1><p>Ideas, laboratorios y conocimiento en movimiento.</p></div>
+        <a class="neon-button" href="login.html">＋ PUBLICAR</a>
       </section>
-
-      <section class="factory-section" id="explore">
-        <div class="factory-section-title"><div><small>01 // KNOWLEDGE DATABASE</small><h2>MÓDULOS <span>DESTACADOS</span></h2></div><a href="#academy">VER TODOS ↗</a></div>
-        <div class="module-grid">
-          <a class="module-card card-cloud" id="cloud" href="#academy"><div class="module-visual"><span>☁</span><i>01</i></div><div class="module-info"><small>CLOUD INFRASTRUCTURE</small><h3>CLOUD MATRIX</h3><p>AWS · AZURE · GCP</p><b>ENTER MODULE ↗</b></div></a>
-          <a class="module-card card-devops" id="devops" href="#labs"><div class="module-visual"><span>⌘</span><i>02</i></div><div class="module-info"><small>CONTINUOUS DELIVERY</small><h3>DEVOPS ENGINE</h3><p>CI/CD · GITHUB ACTIONS · JENKINS</p><b>ENTER MODULE ↗</b></div></a>
-          <a class="module-card card-kube" id="containers" href="#labs"><div class="module-visual"><span>⬡</span><i>03</i></div><div class="module-info"><small>CONTAINER ECOSYSTEM</small><h3>KUBERNETES CORE</h3><p>DOCKER · K8S · HELM</p><b>ENTER MODULE ↗</b></div></a>
-          <a class="module-card card-cyber" id="security" href="#academy"><div class="module-visual"><span>⛨</span><i>04</i></div><div class="module-info"><small>DEFENSE PROTOCOL</small><h3>CYBERSECURITY</h3><p>WAF · SIEM · DEVSECOPS</p><b>ENTER MODULE ↗</b></div></a>
-          <a class="module-card card-auto" id="automation" href="#labs"><div class="module-visual"><span>⚙</span><i>05</i></div><div class="module-info"><small>INFRASTRUCTURE AS CODE</small><h3>AUTOMATION LAB</h3><p>TERRAFORM · ANSIBLE · BASH</p><b>ENTER MODULE ↗</b></div></a>
-        </div>
+      <nav class="feed-tabs" aria-label="Feed categories"><a class="selected" href="#reels">PARA TI</a><a href="#reels">SIGUIENDO</a><a href="#reels">CLOUD</a><a href="#reels">DEVOPS</a><a href="#reels">CYBER</a><a href="#reels">KUBERNETES</a></nav>
+      <section class="reels-feed" id="reels" aria-label="Reels de Digital Factory">
+        <article class="reel-card reel-cloud">
+          <div class="reel-image"><div class="reel-image-grid"></div><div class="reel-visual-icon">☁</div><div class="reel-top-tag">01 / CLOUD MATRIX <span>● LIVE</span></div><div class="reel-play">▶</div></div>
+          <div class="reel-caption"><span class="reel-category">AZURE // CLOUD GOVERNANCE</span><h2>Construye tu Landing Zone</h2><p>Management Groups, Policies, RBAC y redes seguras. La base de una plataforma cloud preparada para producción.</p><div class="reel-author"><span class="avatar">DF</span><span><b>DIGITAL FACTORY</b><small>Cloud Engineering · 2 min</small></span><a href="login.html">SEGUIR +</a></div><div class="reel-tags">#AZURE　#CLOUD　#GOVERNANCE</div></div>
+          <div class="reel-actions"><button data-like aria-label="Me gusta"><b>♡</b><span>1.2K</span></button><button data-share aria-label="Compartir"><b>↗</b><span>SHARE</span></button><a href="login.html"><b>▣</b><span>GUARDAR</span></a><a href="login.html"><b>•••</b><span>MÁS</span></a></div>
+        </article>
+        <article class="reel-card reel-devops">
+          <div class="reel-image"><div class="reel-image-grid"></div><div class="reel-visual-icon">⌘</div><div class="reel-top-tag">02 / DEVOPS ENGINE <span>● STREAM</span></div><div class="pipeline-visual"><i>COMMIT</i><b>→</b><i>BUILD</i><b>→</b><i>TEST</i><b>→</b><i>DEPLOY</i></div></div>
+          <div class="reel-caption"><span class="reel-category">CI/CD // AUTOMATION</span><h2>Del commit a producción</h2><p>Un pipeline multi-entorno con validaciones, artefactos y despliegues controlados en DEV, QA y PROD.</p><div class="reel-author"><span class="avatar">DF</span><span><b>DIGITAL FACTORY</b><small>DevOps Lab · 4 min</small></span><a href="login.html">SEGUIR +</a></div><div class="reel-tags">#GITHUBACTIONS　#CICD　#DEVOPS</div></div>
+          <div class="reel-actions"><button data-like aria-label="Me gusta"><b>♡</b><span>856</span></button><button data-share aria-label="Compartir"><b>↗</b><span>SHARE</span></button><a href="login.html"><b>▣</b><span>GUARDAR</span></a><a href="login.html"><b>•••</b><span>MÁS</span></a></div>
+        </article>
+        <article class="reel-card reel-kube">
+          <div class="reel-image"><div class="reel-image-grid"></div><div class="reel-visual-icon">⬡</div><div class="reel-top-tag">03 / KUBERNETES CORE <span>● LIVE</span></div><div class="kube-nodes"><i>CONTROL PLANE</i><b>↙　↓　↘</b><span>NODE 01</span><span>NODE 02</span><span>NODE 03</span></div></div>
+          <div class="reel-caption"><span class="reel-category">KUBERNETES // OBSERVABILITY</span><h2>Observabilidad real en K8s</h2><p>Prometheus, Grafana y métricas de clúster para entender qué sucede dentro de tus workloads.</p><div class="reel-author"><span class="avatar">DF</span><span><b>DIGITAL FACTORY</b><small>Kubernetes Lab · 6 min</small></span><a href="login.html">SEGUIR +</a></div><div class="reel-tags">#KUBERNETES　#PROMETHEUS　#GRAFANA</div></div>
+          <div class="reel-actions"><button data-like aria-label="Me gusta"><b>♡</b><span>2.4K</span></button><button data-share aria-label="Compartir"><b>↗</b><span>SHARE</span></button><a href="login.html"><b>▣</b><span>GUARDAR</span></a><a href="login.html"><b>•••</b><span>MÁS</span></a></div>
+        </article>
+        <article class="reel-card reel-cyber">
+          <div class="reel-image"><div class="reel-image-grid"></div><div class="reel-visual-icon">⛨</div><div class="reel-top-tag">04 / CYBER DEFENSE <span>● SECURE</span></div><div class="security-radar"><i></i><b>ZERO<br>TRUST</b></div></div>
+          <div class="reel-caption"><span class="reel-category">DEVSECOPS // SECURITY</span><h2>Seguridad desde el pipeline</h2><p>Integra análisis de dependencias, secretos y contenedores antes de liberar cada versión.</p><div class="reel-author"><span class="avatar">DF</span><span><b>DIGITAL FACTORY</b><small>Security Operations · 3 min</small></span><a href="login.html">SEGUIR +</a></div><div class="reel-tags">#DEVSECOPS　#ZEROTRUST　#SECURITY</div></div>
+          <div class="reel-actions"><button data-like aria-label="Me gusta"><b>♡</b><span>943</span></button><button data-share aria-label="Compartir"><b>↗</b><span>SHARE</span></button><a href="login.html"><b>▣</b><span>GUARDAR</span></a><a href="login.html"><b>•••</b><span>MÁS</span></a></div>
+        </article>
       </section>
-
-      <section class="factory-lower-grid">
-        <div class="factory-panel activity-panel" id="academy">
-          <div class="panel-title"><span>▣</span><div><h2>ÚLTIMAS TRANSMISIONES</h2><small>ACADEMY // NEW KNOWLEDGE STREAM</small></div><a href="login.html">VER MÁS ↗</a></div>
-          <div class="transmission-row"><b>01</b><span class="transmission-icon">☁</span><div><strong>Azure Landing Zone</strong><small>Cloud Governance / Architecture</small></div><label>AZURE</label><span class="row-arrow">›</span></div>
-          <div class="transmission-row"><b>02</b><span class="transmission-icon">⌘</span><div><strong>Pipeline CI/CD Multi-Environment</strong><small>DevOps / GitHub Actions</small></div><label>CI/CD</label><span class="row-arrow">›</span></div>
-          <div class="transmission-row"><b>03</b><span class="transmission-icon">⬡</span><div><strong>Kubernetes Observability Stack</strong><small>Prometheus / Grafana / Metrics</small></div><label>K8S</label><span class="row-arrow">›</span></div>
-          <div class="transmission-row"><b>04</b><span class="transmission-icon">⛨</span><div><strong>DevSecOps Security Gates</strong><small>Scanning / WAF / SIEM</small></div><label>SEC</label><span class="row-arrow">›</span></div>
-        </div>
-
-        <div class="factory-panel forge-panel" id="labs">
-          <div class="panel-title"><span>✣</span><div><h2>FORGE YOUR LAB</h2><small>CONFIGURA TU PRÓXIMO DESAFÍO</small></div></div>
-          <p>Selecciona un entorno y comienza a construir experiencia real.</p>
-          <label>PLATAFORMA<select><option>Azure Cloud</option><option>AWS Cloud</option><option>On-Premise</option><option>Multi-Cloud</option></select></label>
-          <label>DISCIPLINA<select><option>DevOps / CI-CD</option><option>Kubernetes</option><option>Cybersecurity</option><option>Observability</option><option>Automation</option></select></label>
-          <label>NIVEL<select><option>Intermedio</option><option>Fundamentos</option><option>Avanzado</option><option>Senior Challenge</option></select></label>
-          <a class="forge-button" href="register.html">▥ DESBLOQUEAR LABORATORIOS</a>
-        </div>
-
-        <div class="factory-panel terminal-panel" id="observability">
-          <div class="panel-title"><span>⌁</span><div><h2>CYBER TERMINAL</h2><small>SYSTEM LOG // LIVE FEED</small></div></div>
-          <div class="terminal-screen"><p><b>[ OK ]</b> DIGITAL FACTORY CORE INITIALIZED</p><p><b>[ OK ]</b> AUTH SERVICE READY</p><p><b>[ OK ]</b> KNOWLEDGE DATABASE MOUNTED</p><p><b>[ OK ]</b> CLOUD MODULES ONLINE</p><p><b>[ OK ]</b> SECURITY PROTOCOL ACTIVE</p><p class="terminal-cyan">> OBSERVABILITY NODE // STANDBY</p><p class="terminal-cursor">> AWAITING MEMBER COMMAND_</p></div>
-          <div class="terminal-foot"><span><i></i> ALL SYSTEMS NOMINAL</span><span>CPU 24% ▂▅▇</span></div>
-        </div>
-
-        <div class="factory-panel resource-panel" id="resources">
-          <div class="panel-title"><span>⇩</span><div><h2>RESOURCE VAULT</h2><small>TOOLS // TEMPLATES // DOWNLOADS</small></div></div>
-          <div class="resource-chips"><span>Terraform modules</span><span>Ansible playbooks</span><span>Architecture diagrams</span><span>Scripts & tools</span><span>Cheat sheets</span></div>
-          <a class="forge-button secondary-forge" href="login.html">ACCEDER A LA BIBLIOTECA ↗</a>
-        </div>
-      </section>
+      <div class="feed-end"><span>✦</span> HAS LLEGADO AL FINAL DEL STREAM <span>✦</span></div>
     </main>
 
     <aside class="factory-rightbar">
