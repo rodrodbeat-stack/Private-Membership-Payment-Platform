@@ -85,3 +85,44 @@
 @media(max-width:1250px){.factory-layout{grid-template-columns:170px minmax(390px,1fr)}.factory-rightbar{position:static;max-height:none}}
 @media(max-width:760px){.factory-layout{display:block;padding:8px}.social-main{margin-top:8px}.social-heading{padding:13px;align-items:flex-start}.social-heading h1{font-size:23px}.social-heading p{font-size:11px}.social-heading .neon-button{padding:10px;font-size:8px}.feed-tabs{margin:0 -2px}.reels-feed{height:calc(100dvh - 205px);min-height:520px;max-height:760px;padding:0 0 12px;gap:12px}.reel-card{width:min(100%,460px);min-height:520px}.reel-caption{left:14px;right:68px;bottom:16px}.reel-caption h2{font-size:20px}.reel-caption p{font-size:12px}.reel-actions{right:9px;bottom:18px;gap:12px}.reel-actions b{width:34px;height:34px}.reel-top-tag{left:13px;right:13px;font-size:7px}.factory-rightbar{display:grid;grid-template-columns:1fr 1fr;margin-top:12px}.factory-footer{margin-top:10px}}
 @media(max-width:430px){.social-heading{gap:8px}.social-heading h1{font-size:19px}.social-heading p{max-width:190px}.social-heading .neon-button{font-size:7px;padding:9px 8px}.reels-feed{height:calc(100dvh - 190px);min-height:500px}.reel-card{min-height:500px}.reel-caption p{font-size:11px}.reel-tags{font-size:7px}.reel-author small{font-size:9px}.factory-rightbar{grid-template-columns:1fr}}
+
+
+/* DIGITAL FACTORY — premium Silicon Valley product layer */
+:root{--bg:#080d16;--panel:#101827;--panel2:#151f30;--cyan:#78bfff;--green:#65d6a2;--text:#edf3fb;--muted:#91a0b5;--line:rgba(148,174,207,.17);--font-head:Inter,system-ui,sans-serif;--font-body:Inter,system-ui,sans-serif}
+body.factory-page{background:#080d16;color:#edf3fb;font-family:Inter,system-ui,sans-serif;font-size:14px}
+.scanlines{display:none}
+.factory-topbar{background:rgba(9,15,25,.97);border-bottom:1px solid #253247;backdrop-filter:blur(16px)}
+.factory-brand{letter-spacing:.5px}.factory-brand strong{font-size:14px;font-weight:750}.factory-brand small{font:600 9px Inter,sans-serif;letter-spacing:1px;color:#91a0b5}
+.factory-emblem{transform:none;border-radius:9px;background:#142a43;border:1px solid #426b94;color:#d9edff;box-shadow:none}
+.factory-layout{max-width:1600px;margin:auto;padding:18px 22px;gap:18px;grid-template-columns:205px minmax(420px,1fr) 275px}
+.factory-sidebar,.right-panel{background:#0e1725;border:1px solid #233147;box-shadow:none;border-radius:12px}
+.factory-sidebar{padding:16px 12px}.sidebar-heading{font:700 9px Inter,sans-serif;letter-spacing:1px;color:#71839b}
+.side-link{font:600 11px Inter,sans-serif;letter-spacing:0;color:#a7b5c8;border-radius:7px}
+.side-link.active,.side-link:hover{background:#172a41;color:#f2f7ff;border-left:2px solid #78bfff}
+.social-heading{padding:20px 22px;border:1px solid #26364d;border-radius:12px;background:linear-gradient(115deg,#111d2e,#0e1725);box-shadow:none}
+.social-heading .factory-eyebrow{font:650 9px Inter,sans-serif;letter-spacing:1px;color:#8ebff0}
+.social-heading h1{font:750 clamp(23px,3vw,34px)/1.1 Inter,sans-serif;letter-spacing:-1px;text-shadow:none}
+.social-heading h1 span{color:#78bfff}.social-heading p{font:400 13px Inter,sans-serif;color:#9aaac0}
+.neon-button{background:#e8f2ff;color:#10243c;border:1px solid #e8f2ff;border-radius:7px;box-shadow:none;font:700 10px Inter,sans-serif}
+.feed-tabs{border-bottom:1px solid #243248}.feed-tabs a{border:0;border-radius:6px;background:transparent;color:#91a0b5;font:650 10px Inter,sans-serif}
+.feed-tabs a.selected,.feed-tabs a:hover{background:#172a41;color:#d9ecff;border:0;box-shadow:inset 0 -2px #78bfff}
+.reel-card{border:1px solid #2a3a50;border-radius:14px;background:#0e1725;box-shadow:0 12px 35px #0004}
+.reel-image{background:radial-gradient(ellipse at 50% 35%,#244969,#17243a 48%,#0d1624 85%)}
+.reel-image:after{background:linear-gradient(180deg,#08111a08 0%,#08111a05 35%,#08111aee 100%)}
+.reel-image-grid{opacity:.16}.reel-visual-icon{color:#d3eaff17;text-shadow:none;filter:none}
+.reel-top-tag,.reel-category,.reel-author b,.reel-author small,.reel-author>a,.reel-tags,.reel-actions span{font-family:Inter,sans-serif}
+.reel-category{color:#9acaff}.reel-caption h2{font:750 clamp(20px,2.8vw,27px)/1.2 Inter,sans-serif;letter-spacing:-.5px;text-shadow:0 2px 14px #0008}
+.reel-caption p{font:400 13px/1.55 Inter,sans-serif;color:#c1cede;text-shadow:none}
+.avatar{border:1px solid #5285b5;background:#172b43;color:#d8ebff;box-shadow:none}
+.reel-actions b{border:1px solid #71869f77;background:#101d2dcc;box-shadow:none}
+.reel-devops .reel-image{background:radial-gradient(ellipse at 50% 35%,#3b315c,#1a2038 48%,#0d1624 85%)}
+.reel-kube .reel-image{background:radial-gradient(ellipse at 50% 35%,#1b5361,#172b3d 48%,#0d1624 85%)}
+.reel-cyber .reel-image{background:radial-gradient(ellipse at 50% 35%,#56354c,#252039 48%,#0d1624 85%)}
+.right-panel-title{font:700 9px Inter,sans-serif;color:#9bcaff;border-bottom:1px solid #26364d}
+.signal-art{border-radius:8px;background:radial-gradient(circle,#294b6d,#142239 60%,#0b1421);border:1px solid #385878}
+.signal-art div{border-color:#8bc8ff;color:#d9edff;box-shadow:none}
+.path-row{border-top:1px solid #26364d}.path-row>b,.path-row>i{color:#8fc7ff}
+.factory-footer{border-top:1px solid #253247;background:#080d16;color:#8292a8;font:600 8px Inter,sans-serif}
+.factory-footer a{color:#a9cfff}
+@media(max-width:1250px){.factory-layout{grid-template-columns:180px minmax(390px,1fr);padding:14px}}
+@media(max-width:760px){.factory-layout{padding:8px}.social-heading{border-radius:10px;padding:14px}.reel-card{border-radius:12px}}
