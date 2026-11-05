@@ -6,6 +6,30 @@ document.addEventListener("DOMContentLoaded", async () => {
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
+  document.querySelectorAll("[data-like]").forEach(button => {
+    button.addEventListener("click", () => {
+      const liked = button.classList.toggle("liked");
+      const icon = button.querySelector("b");
+      if (icon) icon.textContent = liked ? "♥" : "♡";
+      button.setAttribute("aria-pressed", String(liked));
+    });
+  });
+
+  document.querySelectorAll("[data-share]").forEach(button => {
+    button.addEventListener("click", async () => {
+      const card = button.closest(".reel-card");
+      const title = card?.querySelector("h2")?.textContent || "DIGITAL FACTORY";
+      const shareData = { title: title + " | DIGITAL FACTORY", text: "Mira este reel de DIGITAL FACTORY", url: window.location.href };
+      try {
+        if (navigator.share) await navigator.share(shareData);
+        else if (navigator.clipboard) {
+          await navigator.clipboard.writeText(window.location.href);
+          button.querySelector("span").textContent = "COPIADO";
+        }
+      } catch (error) { /* El usuario canceló compartir. */ }
+    });
+  });
+
   const clock = document.getElementById("system-clock");
   const updateClock = () => { if (clock) clock.textContent = new Date().toLocaleTimeString("es-CL", { hour12: false }); };
   updateClock();
