@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#05080d">
+  <meta name="description" content="Plataforma privada de membresía y contenido exclusivo.">
+  <title>BLACKVAULT | Private Access</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Blackvault inicio"><span class="brand-mark">B</span><span>BLACK<span class="accent">VAULT</span></span></a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a class="active" href="index.html">INICIO</a>
+      <a href="#access">ACCESO</a>
+      <a href="plans.html">MEMBRESÍAS</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost btn-small" href="login.html">INICIAR SESIÓN</a>
+      <a class="btn btn-primary btn-small" href="register.html">REGISTRARME <span>↗</span></a>
+    </div>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> PRIVATE NETWORK // ACCESS CONTROL</div>
+        <h1>EL CONOCIMIENTO<br>ES <span class="outline-text">PODER.</span></h1>
+        <p class="hero-lead">Un espacio privado. Recursos exclusivos. Acceso bajo tu control.</p>
+        <p class="hero-description">Únete a una plataforma diseñada para miembros. Elige tu modalidad de acceso y desbloquea contenido exclusivo desde un único panel.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" href="plans.html">EXPLORAR MEMBRESÍAS <span>→</span></a>
+          <a class="btn btn-ghost btn-large" href="login.html">YA SOY MIEMBRO</a>
+        </div>
+        <div class="hero-meta"><span>01 / ACCESO PRIVADO</span><span>02 / PAGO SEGURO</span><span>03 / CONTENIDO EXCLUSIVO</span></div>
+      </div>
+      <div class="vault-visual" aria-label="Gráfico futurista de acceso protegido">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="vault-core"><div class="core-ring">BV</div><span>SECURE<br>ACCESS</span></div>
+        <div class="visual-tag tag-top">AUTHORIZATION // READY</div>
+        <div class="visual-tag tag-bottom"><span class="status-dot"></span> SYSTEM ONLINE</div>
+        <div class="crosshair crosshair-a"></div><div class="crosshair crosshair-b"></div>
+      </div>
+      <div class="hero-index">BV<span> //</span> 001</div>
+    </section>
+
+    <section class="access-section section-wrap" id="access">
+      <div class="section-heading">
+        <div><div class="eyebrow">CHOOSE YOUR ACCESS</div><h2>UNA PUERTA.<br><span class="accent">DOS FORMAS</span> DE ENTRAR.</h2></div>
+        <p>Selecciona la modalidad que mejor se adapte a ti. Tu acceso se habilitará después de validar el pago.</p>
+      </div>
+      <div class="plans-grid">
+        <article class="plan-card">
+          <div class="card-topline"><span>OPTION 01</span><span class="plan-icon">◈</span></div>
+          <h3>ACCESS<br>PERMANENTE</h3>
+          <p>Un único pago para obtener acceso permanente al contenido incluido en el plan.</p>
+          <ul><li>Pago único</li><li>Acceso sin renovación mensual</li><li>Panel privado de miembro</li></ul>
+          <a class="text-link" href="plans.html">VER DETALLES <span>↗</span></a>
+        </article>
+        <article class="plan-card featured">
+          <div class="featured-label">MEMBERSHIP</div>
+          <div class="card-topline"><span>OPTION 02</span><span class="plan-icon">⌁</span></div>
+          <h3>ACCESS<br>MENSUAL</h3>
+          <p>Una membresía flexible con renovación mensual y acceso mientras esté activa.</p>
+          <ul><li>Suscripción mensual</li><li>Renovación recurrente</li><li>Panel privado de miembro</li></ul>
+          <a class="text-link" href="plans.html">VER DETALLES <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="security-band">
+      <div class="security-symbol">⬡</div>
+      <div><div class="eyebrow">SECURITY FIRST</div><h2>EL ACCESO SE VERIFICA.<br><span class="accent">NO SE SIMULA.</span></h2></div>
+      <p>La autenticación y la confirmación de pagos se validarán en servicios seguros. Nunca guardaremos claves privadas ni secretos de pago en el frontend público.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="index.html"><span class="brand-mark">B</span><span>BLACK<span class="accent">VAULT</span></span></a><span>PRIVATE MEMBERSHIP PLATFORM</span><span>© <span id="year"></span> BLACKVAULT // ALL SYSTEMS RESERVED</span></footer>
+</body>
+</html>
