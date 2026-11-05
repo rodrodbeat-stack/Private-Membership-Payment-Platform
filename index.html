@@ -3,86 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#05080d">
-  <meta name="description" content="Plataforma privada de membresía y contenido exclusivo.">
-  <title>BLACKVAULT | Private Access</title>
+  <meta name="theme-color" content="#05030b">
+  <meta name="description" content="BLACKVAULT — Digital knowledge factory. Cloud, DevOps, cybersecurity, automation and observability.">
+  <title>BLACKVAULT // DIGITAL KNOWLEDGE FACTORY</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/app.js" defer></script>
 </head>
-<body>
+<body class="factory-page">
   <div class="scanlines" aria-hidden="true"></div>
-  <header class="topbar">
-    <a class="brand" href="index.html" aria-label="Blackvault inicio"><span class="brand-mark">B</span><span>BLACK<span class="accent">VAULT</span></span></a>
-    <nav class="main-nav" aria-label="Navegación principal">
-      <a class="active" href="index.html">INICIO</a>
-      <a href="#access">ACCESO</a>
-      <a href="plans.html">MEMBRESÍAS</a>
-    </nav>
-    <div class="nav-actions">
-      <a class="btn btn-ghost btn-small" href="login.html">INICIAR SESIÓN</a>
-      <a class="btn btn-primary btn-small" href="register.html">REGISTRARME <span>↗</span></a>
-    </div>
+  <header class="factory-topbar">
+    <a class="factory-brand" href="index.html"><span class="factory-emblem">BV</span><span><strong>BLACKVAULT</strong><small>SKYNET // DIGITAL KNOWLEDGE FACTORY</small></span></a>
+    <div class="factory-motto">CLOUD <i>//</i> DEVOPS <i>//</i> CYBERSECURITY <i>//</i> NO LIMITS</div>
+    <div class="factory-status"><span class="status-dot"></span> SYSTEM ONLINE <time id="system-clock">--:--:--</time></div>
+    <div class="factory-account"><a href="login.html">LOGIN</a><a class="factory-register" href="register.html">JOIN ↗</a></div>
     <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> PRIVATE NETWORK // ACCESS CONTROL</div>
-        <h1>EL CONOCIMIENTO<br>ES <span class="outline-text">PODER.</span></h1>
-        <p class="hero-lead">Un espacio privado. Recursos exclusivos. Acceso bajo tu control.</p>
-        <p class="hero-description">Únete a una plataforma diseñada para miembros. Elige tu modalidad de acceso y desbloquea contenido exclusivo desde un único panel.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary btn-large" href="plans.html">EXPLORAR MEMBRESÍAS <span>→</span></a>
-          <a class="btn btn-ghost btn-large" href="login.html">YA SOY MIEMBRO</a>
+  <div class="factory-layout">
+    <aside class="factory-sidebar">
+      <div class="sidebar-heading">COMMAND MENU</div>
+      <a class="side-link active" href="#home"><b>⌂</b> INICIO</a>
+      <a class="side-link" href="#explore"><b>⌕</b> EXPLORAR</a>
+      <a class="side-link" href="#academy"><b>▣</b> ACADEMY</a>
+      <a class="side-link" href="#labs"><b>⌘</b> LABORATORIOS</a>
+      <a class="side-link" href="#resources"><b>⇩</b> RECURSOS</a>
+      <div class="sidebar-heading genre-heading">SYSTEM MODULES</div>
+      <a class="side-link module-link" href="#cloud"><b>◈</b> CLOUD</a>
+      <a class="side-link module-link" href="#devops"><b>⌁</b> DEVOPS / CI-CD</a>
+      <a class="side-link module-link" href="#containers"><b>⬡</b> CONTAINERS</a>
+      <a class="side-link module-link" href="#security"><b>⛨</b> CYBERSECURITY</a>
+      <a class="side-link module-link" href="#automation"><b>⚙</b> AUTOMATION</a>
+      <a class="side-link module-link" href="#observability"><b>◉</b> OBSERVABILITY</a>
+      <div class="sidebar-bottom"><div class="vault-symbol">BV</div><strong>BLACKVAULT</strong><small>PRIVATE KNOWLEDGE SYSTEM</small><span><i></i> SECURE NODE ACTIVE</span></div>
+    </aside>
+
+    <main class="factory-main" id="home">
+      <section class="factory-hero">
+        <div class="hero-art-grid"></div>
+        <div class="hero-copy-factory">
+          <div class="factory-eyebrow"><span class="status-dot"></span> BIENVENIDO AL SISTEMA // MEMBER ACCESS</div>
+          <h1>DIGITAL<br><span>KNOWLEDGE</span><br>FACTORY</h1>
+          <p>CONSTRUYE. AUTOMATIZA. PROTEGE.<br><em>El conocimiento es tu mejor infraestructura.</em></p>
+          <div class="factory-hero-actions"><a class="neon-button" href="register.html">▶ ACTIVAR ACCESO</a><a class="outline-button" href="#explore">EXPLORAR SISTEMA ↓</a></div>
         </div>
-        <div class="hero-meta"><span>01 / ACCESO PRIVADO</span><span>02 / PAGO SEGURO</span><span>03 / CONTENIDO EXCLUSIVO</span></div>
-      </div>
-      <div class="vault-visual" aria-label="Gráfico futurista de acceso protegido">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="vault-core"><div class="core-ring">BV</div><span>SECURE<br>ACCESS</span></div>
-        <div class="visual-tag tag-top">AUTHORIZATION // READY</div>
-        <div class="visual-tag tag-bottom"><span class="status-dot"></span> SYSTEM ONLINE</div>
-        <div class="crosshair crosshair-a"></div><div class="crosshair crosshair-b"></div>
-      </div>
-      <div class="hero-index">BV<span> //</span> 001</div>
-    </section>
+        <div class="hero-reactor" aria-label="Blackvault digital core"><div class="reactor-orbit orbit-a"></div><div class="reactor-orbit orbit-b"></div><div class="reactor-core"><span>BV</span><small>CORE<br>ENGINE</small></div><div class="reactor-label label-a">ZERO TRUST // READY</div><div class="reactor-label label-b">KNOWLEDGE NODE 001</div></div>
+        <div class="hero-bottomline"><span>BLACKVAULT // PRIVATE NETWORK</span><span>ACCESS LEVEL: <b>MEMBER</b></span><span>LATENCY: 08ms</span></div>
+      </section>
 
-    <section class="access-section section-wrap" id="access">
-      <div class="section-heading">
-        <div><div class="eyebrow">CHOOSE YOUR ACCESS</div><h2>UNA PUERTA.<br><span class="accent">DOS FORMAS</span> DE ENTRAR.</h2></div>
-        <p>Selecciona la modalidad que mejor se adapte a ti. Tu acceso se habilitará después de validar el pago.</p>
-      </div>
-      <div class="plans-grid">
-        <article class="plan-card">
-          <div class="card-topline"><span>OPTION 01</span><span class="plan-icon">◈</span></div>
-          <h3>ACCESS<br>PERMANENTE</h3>
-          <p>Un único pago para obtener acceso permanente al contenido incluido en el plan.</p>
-          <ul><li>Pago único</li><li>Acceso sin renovación mensual</li><li>Panel privado de miembro</li></ul>
-          <a class="text-link" href="plans.html">VER DETALLES <span>↗</span></a>
-        </article>
-        <article class="plan-card featured">
-          <div class="featured-label">MEMBERSHIP</div>
-          <div class="card-topline"><span>OPTION 02</span><span class="plan-icon">⌁</span></div>
-          <h3>ACCESS<br>MENSUAL</h3>
-          <p>Una membresía flexible con renovación mensual y acceso mientras esté activa.</p>
-          <ul><li>Suscripción mensual</li><li>Renovación recurrente</li><li>Panel privado de miembro</li></ul>
-          <a class="text-link" href="plans.html">VER DETALLES <span>↗</span></a>
-        </article>
-      </div>
-    </section>
+      <section class="factory-section" id="explore">
+        <div class="factory-section-title"><div><small>01 // KNOWLEDGE DATABASE</small><h2>MÓDULOS <span>DESTACADOS</span></h2></div><a href="#academy">VER TODOS ↗</a></div>
+        <div class="module-grid">
+          <a class="module-card card-cloud" id="cloud" href="#academy"><div class="module-visual"><span>☁</span><i>01</i></div><div class="module-info"><small>CLOUD INFRASTRUCTURE</small><h3>CLOUD MATRIX</h3><p>AWS · AZURE · GCP</p><b>ENTER MODULE ↗</b></div></a>
+          <a class="module-card card-devops" id="devops" href="#labs"><div class="module-visual"><span>⌘</span><i>02</i></div><div class="module-info"><small>CONTINUOUS DELIVERY</small><h3>DEVOPS ENGINE</h3><p>CI/CD · GITHUB ACTIONS · JENKINS</p><b>ENTER MODULE ↗</b></div></a>
+          <a class="module-card card-kube" id="containers" href="#labs"><div class="module-visual"><span>⬡</span><i>03</i></div><div class="module-info"><small>CONTAINER ECOSYSTEM</small><h3>KUBERNETES CORE</h3><p>DOCKER · K8S · HELM</p><b>ENTER MODULE ↗</b></div></a>
+          <a class="module-card card-cyber" id="security" href="#academy"><div class="module-visual"><span>⛨</span><i>04</i></div><div class="module-info"><small>DEFENSE PROTOCOL</small><h3>CYBERSECURITY</h3><p>WAF · SIEM · DEVSECOPS</p><b>ENTER MODULE ↗</b></div></a>
+          <a class="module-card card-auto" id="automation" href="#labs"><div class="module-visual"><span>⚙</span><i>05</i></div><div class="module-info"><small>INFRASTRUCTURE AS CODE</small><h3>AUTOMATION LAB</h3><p>TERRAFORM · ANSIBLE · BASH</p><b>ENTER MODULE ↗</b></div></a>
+        </div>
+      </section>
 
-    <section class="security-band">
-      <div class="security-symbol">⬡</div>
-      <div><div class="eyebrow">SECURITY FIRST</div><h2>EL ACCESO SE VERIFICA.<br><span class="accent">NO SE SIMULA.</span></h2></div>
-      <p>La autenticación y la confirmación de pagos se validarán en servicios seguros. Nunca guardaremos claves privadas ni secretos de pago en el frontend público.</p>
-    </section>
-  </main>
+      <section class="factory-lower-grid">
+        <div class="factory-panel activity-panel" id="academy">
+          <div class="panel-title"><span>▣</span><div><h2>ÚLTIMAS TRANSMISIONES</h2><small>ACADEMY // NEW KNOWLEDGE STREAM</small></div><a href="login.html">VER MÁS ↗</a></div>
+          <div class="transmission-row"><b>01</b><span class="transmission-icon">☁</span><div><strong>Azure Landing Zone</strong><small>Cloud Governance / Architecture</small></div><label>AZURE</label><span class="row-arrow">›</span></div>
+          <div class="transmission-row"><b>02</b><span class="transmission-icon">⌘</span><div><strong>Pipeline CI/CD Multi-Environment</strong><small>DevOps / GitHub Actions</small></div><label>CI/CD</label><span class="row-arrow">›</span></div>
+          <div class="transmission-row"><b>03</b><span class="transmission-icon">⬡</span><div><strong>Kubernetes Observability Stack</strong><small>Prometheus / Grafana / Metrics</small></div><label>K8S</label><span class="row-arrow">›</span></div>
+          <div class="transmission-row"><b>04</b><span class="transmission-icon">⛨</span><div><strong>DevSecOps Security Gates</strong><small>Scanning / WAF / SIEM</small></div><label>SEC</label><span class="row-arrow">›</span></div>
+        </div>
 
-  <footer class="footer"><a class="brand" href="index.html"><span class="brand-mark">B</span><span>BLACK<span class="accent">VAULT</span></span></a><span>PRIVATE MEMBERSHIP PLATFORM</span><span>© <span id="year"></span> BLACKVAULT // ALL SYSTEMS RESERVED</span></footer>
+        <div class="factory-panel forge-panel" id="labs">
+          <div class="panel-title"><span>✣</span><div><h2>FORGE YOUR LAB</h2><small>CONFIGURA TU PRÓXIMO DESAFÍO</small></div></div>
+          <p>Selecciona un entorno y comienza a construir experiencia real.</p>
+          <label>PLATAFORMA<select><option>Azure Cloud</option><option>AWS Cloud</option><option>On-Premise</option><option>Multi-Cloud</option></select></label>
+          <label>DISCIPLINA<select><option>DevOps / CI-CD</option><option>Kubernetes</option><option>Cybersecurity</option><option>Observability</option><option>Automation</option></select></label>
+          <label>NIVEL<select><option>Intermedio</option><option>Fundamentos</option><option>Avanzado</option><option>Senior Challenge</option></select></label>
+          <a class="forge-button" href="register.html">▥ DESBLOQUEAR LABORATORIOS</a>
+        </div>
+
+        <div class="factory-panel terminal-panel" id="observability">
+          <div class="panel-title"><span>⌁</span><div><h2>CYBER TERMINAL</h2><small>SYSTEM LOG // LIVE FEED</small></div></div>
+          <div class="terminal-screen"><p><b>[ OK ]</b> BLACKVAULT CORE INITIALIZED</p><p><b>[ OK ]</b> AUTH SERVICE READY</p><p><b>[ OK ]</b> KNOWLEDGE DATABASE MOUNTED</p><p><b>[ OK ]</b> CLOUD MODULES ONLINE</p><p><b>[ OK ]</b> SECURITY PROTOCOL ACTIVE</p><p class="terminal-cyan">> OBSERVABILITY NODE // STANDBY</p><p class="terminal-cursor">> AWAITING MEMBER COMMAND_</p></div>
+          <div class="terminal-foot"><span><i></i> ALL SYSTEMS NOMINAL</span><span>CPU 24% ▂▅▇</span></div>
+        </div>
+
+        <div class="factory-panel resource-panel" id="resources">
+          <div class="panel-title"><span>⇩</span><div><h2>RESOURCE VAULT</h2><small>TOOLS // TEMPLATES // DOWNLOADS</small></div></div>
+          <div class="resource-chips"><span>Terraform modules</span><span>Ansible playbooks</span><span>Architecture diagrams</span><span>Scripts & tools</span><span>Cheat sheets</span></div>
+          <a class="forge-button secondary-forge" href="login.html">ACCEDER A LA BIBLIOTECA ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <aside class="factory-rightbar">
+      <section class="right-panel now-panel"><div class="right-panel-title"><span>◉</span> FEATURED SIGNAL</div><div class="signal-art"><div>BV</div></div><h3>THE DIGITAL FRONTIER</h3><p>Cloud · Automation · Cyber Defense</p><div class="signal-meter"><i></i></div><div class="signal-meta"><span>KNOWLEDGE STREAM</span><b>LIVE</b></div></section>
+      <section class="right-panel playlist-panel"><div class="right-panel-title"><span>✣</span> LEARNING PATH</div><small class="right-subtitle">RUTA RECOMENDADA</small><a class="path-row" href="#cloud"><b>01</b><span>Cloud Foundations<small>AWS / Azure</small></span><i>›</i></a><a class="path-row" href="#devops"><b>02</b><span>CI/CD Engineering<small>Build / Deploy / Release</small></span><i>›</i></a><a class="path-row" href="#containers"><b>03</b><span>Container Orchestration<small>Docker / Kubernetes</small></span><i>›</i></a><a class="path-row" href="#security"><b>04</b><span>Security Operations<small>DevSecOps / SIEM</small></span><i>›</i></a></section>
+      <section class="right-panel access-panel"><div class="right-panel-title"><span>✦</span> MEMBER ACCESS</div><p>Entra al núcleo privado de BLACKVAULT y continúa tu entrenamiento.</p><a class="neon-button compact-button" href="login.html">INICIAR SESIÓN</a><a class="outline-button compact-button" href="register.html">CREAR CUENTA</a><div class="access-lock">⬡ PRIVATE NODE // ENCRYPTED</div></section>
+      <section class="right-panel stats-panel"><div class="right-panel-title"><span>◌</span> NETWORK STATUS</div><div><span>AUTHENTICATION</span><b>READY</b></div><div><span>CONTENT ENGINE</span><b>ONLINE</b></div><div><span>PAYMENT GATEWAY</span><b class="pending">STANDBY</b></div></section>
+    </aside>
+  </div>
+
+  <footer class="factory-footer"><span>© <span id="year"></span> BLACKVAULT // DIGITAL KNOWLEDGE FACTORY</span><span>BUILT FOR THE NEXT GENERATION OF ENGINEERS</span><span><a href="plans.html">MEMBERSHIPS</a>　|　<a href="login.html">PRIVATE ACCESS</a>　|　<a href="register.html">JOIN</a></span></footer>
 </body>
 </html>
