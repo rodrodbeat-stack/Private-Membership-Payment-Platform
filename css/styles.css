@@ -162,3 +162,19 @@ body.factory-page:before{background:linear-gradient(90deg,transparent 49.9%,#c38
 @keyframes predatorSweep{0%{transform:translateX(-110%);opacity:0}15%,85%{opacity:.45}100%{transform:translateX(110%);opacity:0}}
 .reel-card:before{content:"";position:absolute;z-index:4;top:0;bottom:0;left:0;width:22%;pointer-events:none;background:linear-gradient(90deg,transparent,#d0a36e22,transparent);transform:translateX(-110%);animation:predatorSweep 9s ease-in-out infinite}
 @media(max-width:760px){.factory-topbar{background:#090c10f7}.factory-sidebar{background:#101619}.reel-card:before{display:none}}
+
+
+/* PREDATOR OPTIC // TACTICAL REEL OVERLAY */
+.reel-card{--optic:#d5b17d}
+.reel-image-grid{pointer-events:none}
+.reel-image-grid:before{content:"";position:absolute;left:50%;top:44%;width:116px;height:116px;transform:translate(-50%,-50%);border:1px solid #d5b17d66;border-radius:50%;background:linear-gradient(90deg,transparent 49.7%,#d5b17d55 50%,transparent 50.3%),linear-gradient(transparent 49.7%,#d5b17d55 50%,transparent 50.3%),radial-gradient(circle,transparent 0 35px,#d5b17d44 36px 37px,transparent 38px);box-shadow:0 0 20px #d5b17d18}
+.reel-image-grid:after{content:"";position:absolute;left:8%;right:8%;top:18%;height:1px;background:linear-gradient(90deg,transparent,#d5b17d99,transparent);box-shadow:0 0 8px #d5b17d88;animation:predatorScan 5.5s ease-in-out infinite}
+.reel-top-tag{padding:8px 10px;border:1px solid #c59b6a55;background:#080d0dbb;backdrop-filter:blur(5px);clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%)}
+.reel-top-tag span{font-size:7px;letter-spacing:1.3px;color:#b6c7a9}
+.reel-top-tag span:before{content:"◉ ";color:#d5b17d}
+.reel-caption:before{content:"PREDATOR OPTIC  //  TARGET IDENTIFIED";display:inline-block;margin-bottom:8px;padding:5px 7px;border-left:2px solid #c99d68;background:#0a100ed9;color:#cdb18a;font:700 7px/1.2 Inter, sans-serif;letter-spacing:1.1px}
+.reel-actions{padding:10px 7px;border:1px solid #a9875a55;background:#080d0dbb;backdrop-filter:blur(6px);border-radius:3px}
+.reel-actions b{border-color:#c39a6b88;color:#e4d5bd}
+@keyframes predatorScan{0%,100%{top:18%;opacity:.2}50%{top:75%;opacity:.85}}
+@media(prefers-reduced-motion:reduce){.reel-image-grid:after{animation:none}}
+@media(max-width:760px){.reel-image-grid:before{width:88px;height:88px}.reel-caption:before{font-size:6px}.reel-actions{padding:7px 5px}}
